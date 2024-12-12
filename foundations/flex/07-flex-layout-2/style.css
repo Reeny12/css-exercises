@@ -17,13 +17,44 @@ body {
 }
 
 .sidebar {
-  width: 300px;
+  width: 800px;
   background: royalblue;
   box-sizing: border-box;
+  height: 500px;
+  padding: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 16px; 
+  padding: 16px;
+}
+
+.top {
+  display: flex;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  display: flex;
+  max-width: 800px;
+  justify-self: center;
+  margin-left: 80px;
+}
+
+.footer {
+  justify-self: center;
 }
